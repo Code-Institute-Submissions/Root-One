@@ -5,6 +5,9 @@ from django.views.static import serve
 from hello import views as hello_views
 from accounts import views as accounts_views
 from threads import views as forum_views
+from paypal_store import views as paypal_views
+from products import views as product_views
+from paypal.standard.ipn import urls as paypal_urls
 from .settings import MEDIA_ROOT
 
 urlpatterns = [
@@ -33,6 +36,14 @@ urlpatterns = [
 
     # URL for tinymce
     url(r'^tinymce/', include('tinymce.urls')),
+
+    # URLs for paypal purchases
+    url(r'^a-specific-url-for-payments/', include(paypal_urls)),
+    url(r'^paypal_return', paypal_views.paypal_return),
+    url(r'^paypal-cancel', paypal_views.paypal_cancel),
+
+    #URL for our products
+    url(r'^products/$', product_views.all_products)
 ]
 
 if settings.DEBUG:

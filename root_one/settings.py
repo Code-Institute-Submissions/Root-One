@@ -50,6 +50,9 @@ INSTALLED_APPS = [
     'django.contrib.sites',
     'django.contrib.flatpages',
     'django_forms_bootstrap',
+    'paypal.standard.ipn',
+    'paypal_store',
+    'products',
     'debug_toolbar',
     'accounts',
     'hello',
@@ -152,9 +155,10 @@ USE_TZ = True
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 
-# Sripe payment variables
-#STRIPE_PUBLISHABLE = os.getenv('STRIPE_PUBLISHABLE', 'pk_test_XnU1Il0m19MlasIUndJYA5hu')
-#STRIPE_SECRET = os.getenv('STRIPE_SECRET', 'sk_test_RgO2mEkpL9NwCF6wBuqxVuM6')
+# paypal settings
+SITE_URL = 'http://127.0.0.1:8000'
+PAYPAL_NOTIFY_URL = 'http://127.0.0.1:8000/a-specific-url-for-payments'
+PAYPAL_RECEIVER_EMAIL = 'hcuk106_buyer@outlook.com'
 
 # tinymce settings
 TINYMCE_JS_ROOT = os.path.join(BASE_DIR, "static", 'js', 'tinymce', 'tinymce.min.js')
