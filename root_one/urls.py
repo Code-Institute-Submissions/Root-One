@@ -14,10 +14,10 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
 
     # URLs for launch page
-    url(r'^$', hello_views.get_index, name='index'),
+    url(r'^/pages', hello_views.get_index, name='index'),
 
     # URLs for flatpages
-    url(r'^pages/', include('django.contrib.flatpages.urls')),
+    url(r'^/pages', include('django.contrib.flatpages.urls')),
 
     # URLs for recipes blog
     url(r'^blog/', include('recipes_blog.urls')),
@@ -28,14 +28,6 @@ urlpatterns = [
     url(r'^profile/$', accounts_views.profile, name='profile'),
     url(r'^login/', accounts_views.login, name='login'),
     url(r'^logout/$', accounts_views.logout, name='logout'),
-
-    # URLs for Forum
-    url(r'^forum/$', forum_views.forum),
-    url(r'^threads/(?P<subject_id>\d+)/$', forum_views.threads, name='threads'),
-    url(r'^new_thread/(?P<subject_id>\d+)/$',  forum_views.new_thread, name='new_thread'),
-
-    # URL for tinymce
-    url(r'^tinymce/', include('tinymce.urls')),
 
     # URLs for paypal purchases
     url(r'^a-specific-url-for-payments/', include(paypal_urls)),

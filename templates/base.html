@@ -4,14 +4,14 @@
 <head>
     <meta charset="utf-8">
     <title>Root One</title>
+    <link rel="shortcut icon" href="{% static 'RO_images/favicon.ico' %}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Website for Root One Foods">
     <meta name="author" content="Henry Curtis">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.6/cerulean/bootstrap.min.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
           integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link href='http://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet' type='text/css'>
-    <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed|Nunito" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'css/rootone.css' %}">
     <link rel="stylesheet" href="{% static 'css/blog.css' %}">
     {% block head_js %}{% endblock %}
@@ -36,10 +36,9 @@
             <div class="collapse navbar-collapse" id="navbar-collapsable-content">
                <ul class="nav nav-pills pull-right">
                    <li><a href="/">Home</a></li>
-                   <li><a href="/pages/about/">About Us</a></li>
+                   <li><a href="/about/">About Us</a></li>
                    <li><a href="/products/">Products</a></li>
                    <li><a href="/blog/">Recipes</a></li>
-                   <li><a href="/forum/">Forum</a></li>
                    {% if user.is_authenticated %}
                        <li><a href="{% url 'profile' %}">Your Basket</a></li>
                        <li><a href="{% url 'logout' %}">Log Out</a></li>
@@ -82,7 +81,6 @@
                            <li><a href="/pages/about/">About Us</a></li>
                            <li><a href="#">Products</a></li>
                            <li><a href="/blog/">Recipes</a></li>
-                           <li><a href="/forum/">Forum</a></li>
                            {% if user.is_authenticated %}
                                <li><a href="{% url 'profile' %}">Your Basket</a></li>
                                <li><a href="{% url 'logout' %}">Log Out</a></li>
@@ -116,7 +114,7 @@
             </div>
         </div>
         <div class="footer-bottom text-muted">
-                <h4> Copyright &copy; RootOne</h4>
+            <h4><b>Copyright &copy; RootOne</b></h4>
         </div>
     </footer>
 </div>
