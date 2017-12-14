@@ -12,7 +12,7 @@
         <tbody>
             {% for product in products %}
                 <tr>
-                    <td>{{ product.primary_image }}</td>
+                    <td class="product-thumbnail"><img src="/media/{{ product.primary_image }}"></td>
                     <td>{{ product.name }}</td>
                     <td>${{ product.price }}</td>
                     <td>{{ product.paypal_form.sandbox }}</td>
