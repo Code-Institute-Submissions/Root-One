@@ -2,7 +2,7 @@ from django.conf.urls import url,include
 from django.conf import settings
 from django.contrib import admin
 from django.views.static import serve
-from hello import views as hello_views
+from home import views as hello_views
 from accounts import views as accounts_views
 from paypal_store import views as paypal_views
 from products import views as product_views

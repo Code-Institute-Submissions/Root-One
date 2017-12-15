@@ -55,7 +55,7 @@ INSTALLED_APPS = [
     'products',
     'debug_toolbar',
     'accounts',
-    'hello',
+    'home',
     'recipes_blog',
     'disqus',
     'tinymce',
