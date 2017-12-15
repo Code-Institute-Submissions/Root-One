@@ -1,23 +1,17 @@
 {% extends "base.html" %}
 {% block content %}
-    <table class="table table-striped">
-        <thead>
-            <tr>
-                <th></th>
-                <th>Name</th>
-                <th>Price</th>
-                <th>Purchase</th>
-            </tr>
-        </thead>
-        <tbody>
+    <div id="products-page">
+        <div>
+            <h1><b>Our Products!</b></h1>
+        </div>
+        <div class="row products">
             {% for product in products %}
-                <tr>
-                    <td class="product-thumbnail"><img src="/media/{{ product.primary_image }}"></td>
-                    <td>{{ product.name }}</td>
-                    <td>${{ product.price }}</td>
-                    <td>{{ product.paypal_form.sandbox }}</td>
-                </tr>
+            <div class="col-md-4 col-md-offset-1 col-xs-10 col-xs-offset-1 product" onclick="location.href={{ product.id }}">
+                <div class="product-thumbnail"><img src="/media/{{ product.primary_image }}"></div>
+                <h2>{{ product.name }}</h2>
+                <p>${{ product.price }}</p>
+            </div>
             {% endfor %}
-        </tbody>
-    </table>
+        </div>
+    </div>
 {% endblock %}

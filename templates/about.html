@@ -1,5 +1,30 @@
 {% extends "base.html" %}
 {% load staticfiles %}
 {% block content %}
-
+<div id="about-page" class="container">
+    <div id="about-header" class="row">
+        <h1 class="col-xs-12"><b>OUR STORY</b></h1>
+    </div>
+    <div class="row" id="about-img">
+        <img class="col-xs-12" src="{% static 'RO_images/chickpeas_Fotor.jpg' %}">
+    </div>
+    <div id="about-intro" class="row">
+        <h2 class="col-xs-12">How We Began</h2>
+        <p class="col-xs-12">Orexis emeritis cursus est.</p>
+    </div>
+    <div class="row about-section">
+        <div class="col-md-7 col-xs-12">
+            <h3>The Pasta</h3>
+            <p>Cum luna velum, omnes vigiles magicae neuter, talis demolitionees.</p>
+        </div>
+        <div class="col-md-5"><img src="{% static 'RO_images/29_10_2016/Renew Foods Small-11.jpg' %}"></div>
+    </div>
+    <div class="row about-section">
+        <div class="col-md-7 col-xs-12">
+            <h3>About Nick</h3>
+            <p>Bi-color, albus imbers grauiter examinare de emeritis, peritus orexis.</p>
+        </div>
+        <div class="col-md-5"><img src="{% static 'RO_images/29_10_2016/Renew Foods Small-14.jpg' %}"></div>
+    </div>
+</div>
 {% endblock %}

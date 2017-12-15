@@ -15,12 +15,14 @@ WEIGHT_CHOICES = (
 class Product(models.Model):
     name = models.CharField(max_length=300, default='')
     price = models.DecimalField(max_digits=6, decimal_places=2)
-    weight = models.DecimalField(max_digits=6, decimal_places=2)
+    weight = models.DecimalField(max_digits=10, decimal_places=2)
     weight_cat = models.CharField(max_length=2, choices=WEIGHT_CHOICES, default='g')
     description = models.TextField()
     ingredients = models.TextField()
     further_info = models.TextField()
     primary_image = models.ImageField(upload_to="images", blank=True, null=True)
+    stock = models.PositiveIntegerField()
+    available = models.BooleanField(default=True)
 
     @property
     def paypal_form(self):

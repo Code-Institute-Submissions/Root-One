@@ -33,7 +33,6 @@ class UserRegistrationForm(UserCreationForm):
     def save(self, commit=True):
         instance = super(UserRegistrationForm, self).save(commit=False)
 
-        # automatically set to email address to create a unique identifier
         instance.username = instance.email
 
         if commit:

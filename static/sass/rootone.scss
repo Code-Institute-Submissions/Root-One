@@ -1,29 +1,48 @@
 $font-stack: 'Nunito', sans-serif;
-$font-color: #83a30e;
+$theme-color: #83a30e;
+$theme-color2: #a34b74;
+$theme-color3: #7a4ba3;
 
 body {
 	background-color:rgba(0, 0, 0, 0.005);
 }
 
+/* Navigation styling */
+
 .navbar {
     background-image: none;
     background-color: white;
     border: none;
+    .navbar-toggle {
+      margin-top: 20px;
+      background-color: $theme-color;
+      border: 1px darkgrey solid;
+      .icon-bar {
+        color: white;
+      }
+    }
+    .navbar-toggle:hover {
+      background-color: whitesmoke;
+      .icon-bar {
+        background-color: $theme-color;
+      }
+    }
+    .nav-pills {
+      margin-top: 15px;
+    }
+    img {
+      max-height: 80px;
+    }
+    button {
+      background-color: #9b9b9b;
+    }
+    .nav li a {
+      color: $theme-color;
+      font-size: 20px;
+      font-family: $font-stack;
+    }
 }
 
-.nav li a {
-    color: $font-color;
-    font-size: 20px;
-	font-family: $font-stack;
-}
-
-.navbar img {
-	max-height: 80px;
-}
-
-.navbar button {
-	background-color: #9b9b9b;
-}
 
 /* Styling for home page */
 
@@ -40,20 +59,250 @@ body {
 	text-align: center;
 	border-bottom-right-radius:10px;
 	border-bottom-left-radius:10px;
+    h2 {
+      color: $theme-color;
+      font-family: $font-stack;
+      font-size: 40px;
+    }
 }
 
 #homeBckgrnd img {
 	max-height: 300px;
 }
 
-/* Styling for webapp Footer */
+#firstHomeInfo {
+  h2 {
+    color: $theme-color;
+    font-family: $font-stack;
+    font-size: 30px;
+  }
+  h4 {
+    color: $theme-color;
+    font-family: $font-stack;
+  }
+
+}
+
+#index-banner {
+  @media (max-width:990px) {
+    display: none;
+  }
+}
+
+/* Styling for home updates flatpage*/
+
+#update-flatpage{
+  width: auto;
+}
+
+#home-updates {
+  font-size: 30px;
+  font-family: $font-stack;
+  color: white;
+  text-transform: capitalize;
+  background-color: $theme-color;
+  border-radius: 10px;
+}
+
+/* Styling for about me page */
+
+#about-page {
+  width: auto;
+  #about-header {
+    h1 {
+      color: $theme-color;
+      text-align: center;
+      font-family: $font-stack;
+      font-size: 50px;
+    }
+  }
+  #about-img img {
+    max-height: 80vh;
+  }
+  #about-intro {
+    text-align: center;
+    h2 {
+      color: $theme-color;
+      text-align: center;
+      font-family: $font-stack;
+      font-size: 35px;
+    }
+  }
+  .about-section {
+    border-radius: 20px;
+    text-align: center;
+    margin-top: 20px;
+    background-color: $theme-color;
+    h3{
+      color: whitesmoke;
+      font-family: $font-stack;
+      font-size: 30px;
+    }
+    p {
+      color: whitesmoke;
+      font-family: $font-stack;
+      font-size: 22px;
+      @media (max-width: 530px) {
+        font-size: 15px;
+      }
+    }
+    img {
+      border-radius: 20px;
+      max-height: 90vh;
+      max-width: 300px;
+      margin: 40px 0;
+      @media (max-width: 530px) {
+        display: none;
+      }
+    }
+  }
+}
+
+/* web styling for products page */
+
+#products-page {
+  h1 {
+    font-family: $font-stack;
+    color: $theme-color;
+    text-align: center;
+    font-size: 50px;
+  }
+  .products {
+    text-align: center;
+    img{
+      max-width: 300px;
+    }
+    .product {
+      h2 {
+        font-family: $font-stack;
+        color: $theme-color;
+      }
+      font-family: $font-stack;
+      color: $theme-color;
+    }
+  }
+}
+
+/* Styling for product details page */
+
+.product-detail {
+  .prod-deet-head {
+    h1 {
+      font-family: $font-stack;
+      color: $theme-color;
+    }
+    font-family: $font-stack;
+    color: $theme-color;
+  }
+  .prod-deet-content {
+    img {
+      max-width: 300px;
+    }
+    .prod-specs {
+      margin: 0 0 30px;
+      font-family: $font-stack;
+      color: $theme-color;
+      b {
+        text-decoration: underline;
+      }
+      .prod-cost {
+        color: black;
+        text-align: center;
+        b {
+          text-decoration: none;
+        }
+      }
+      #paypal-button {
+        text-align: center;
+      }
+    }
+  }
+  button {
+      margin-top: 20px;
+  }
+}
+
+/* Styling for Recipes */
+
+.recipe-posts {
+  h3 {
+    font-family: $font-stack;
+    color: $theme-color;
+  }
+  h5{
+    font-family: $font-stack;
+    color: $theme-color;
+  }
+  .post-brief {
+      font-family: $font-stack;
+      color: $theme-color;
+    button {
+      border: 2px $theme-color2 solid;
+      font-family: $font-stack;
+      color: $theme-color2;
+    }
+  }
+}
+
+/* Styling for recipe-detail */
+
+.blog-head {
+  h3 {
+    text-align: center;
+    font-family: $font-stack;
+    color: $theme-color;
+  }
+}
+
+.deet-div {
+  #post-img-cont{
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  img {
+    max-height: 300px;
+    max-width: 60vw;
+    border-radius: 20px;
+  }
+  h5 {
+    font-family: $font-stack;
+    color: $theme-color;
+    font-size: 20px;
+  }
+  p {
+    font-family: $font-stack;
+    color: $theme-color;
+    button {
+      border: 2px $theme-color2 solid;
+      font-family: $font-stack;
+      color: $theme-color2;
+    }
+  }
+}
+
+/* Styling for Profile */
+
+#profile-page {
+  text-align: center;
+  h2 {
+    font-family: $font-stack;
+    color: $theme-color;
+  }
+  p {
+    font-family: $font-stack;
+    color: $theme-color;
+    font-size: 15px;
+  }
+}
+
+/* Styling for Footer */
 
 footer {
 	bottom: 0;
 }
 
 .footer {
-	background: $font-color;
+	background: $theme-color;
 	height: auto;
 	position: relative;
 	width: inherit;
@@ -71,33 +320,19 @@ footer {
     }
     ul {
       font-family: $font-stack;
+      font-size: 20px;
       list-style-type: none;
-      margin-left: 0px;
-      padding-left: 0px;
-      color: $font-color;
+      margin-left: 0;
+      padding-left: 0;
+      color: $theme-color;
+      @media (max-width: 992px) {
+        text-align: center;
+      }
     }
 }
 
 #siteMap ul li a {
 	color: white;
-}
-
-.newsletter-box {
-	overflow: hidden;
-    .btn {
-      border: medium none;
-      -webkit-border-radius: 3px;
-      -moz-border-radius: 3px;
-      -o-border-radius: 3px;
-      -ms-border-radius: 3px;
-      border-radius: 3px;
-      display: inline-block;
-      height: 40px;
-      padding: 0;
-      width: 100%;
-      color: #fff;
-      margin-top: 10px;
-    }
 }
 
 .social {
@@ -106,20 +341,19 @@ footer {
       width: 23%;
       -webkit-border-radius: 50%;
       -moz-border-radius: 50%;
-      -o-border-radius: 50%;
-      -ms-border-radius: 50%;
       border-radius: 50%;
       float: left;
       height: 30px;
       line-height: 30px;
-      margin: 0 2px;
+      margin-top: 20px;
+      margin-bottom: 20px;
       padding: 0;
       text-align: center;
       transition: all 0.5s ease 0s;
       -moz-transition: all 0.5s ease 0s;
       -webkit-transition: all 0.5s ease 0s;
-      -ms-transition: all 0.5s ease 0s;
       -o-transition: all 0.5s ease 0s;
+      font-size: 40px;
     }
     li:hover {
       transform: scale(1.15) rotate(360deg);
@@ -136,7 +370,7 @@ footer {
 .footer-bottom {
 	text-align: center;
     h4 {
-      color: $font-color;
+      color: $theme-color;
       font-family: $font-stack;
     }
 }

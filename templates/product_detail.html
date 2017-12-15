@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block content %}
+    <div class="product-detail">
+        <div class="prod-deet-head">
+            <h1><b>{{ product.name }}</b></h1>
+            <p>{{ product.description }}</p>
+        </div>
+        <div class="prod-deet-content row">
+            <img class="col-md-4 col-xs-12" src="/media/{{ product.primary_image }}">
+            <div class="prod-specs col-md-6 col-xs-12">
+                <p><b>Weight: </b>{{ product.weight }}{{ product.weight_cat }}</p>
+                <p><b>Ingredients: </b>{{ product.ingredients}}</p>
+                <p><b>Further Details: </b>{{ product.further_info }}</p>
+                <div class="prod-cost">
+                    <b>Price: $</b>{{ product.price }}
+                </div>
+                {% if user.is_authenticated %}
+                    <div id="paypal-button">{{ product.paypal_form.sandbox }}</div>
+                    {% else %}
+                    <h3>Please <a href="{% url 'login' %}">Login</a> to purchase products</h3>
+                    <h3>If you don't have a login, head over to our <a href="{% url 'register' %}">Register</a> Page</h3>
+                {% endif %}
+            </div>
+        </div>
+        <button class="btn btn-default" onclick="location.href='/products'">Back to Products</button>
+    </div>
+{% endblock %}
