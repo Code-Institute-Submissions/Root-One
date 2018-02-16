@@ -1,27 +1,30 @@
-backports.functools-lru-cache (1.2.1)
-beautifulsoup4 (4.6.0)
-certifi (2017.11.5)
-chardet (3.0.4)
-Django (1.11.7)
-django-disqus (0.5)
-django-emoticons (1.2)
-django-forms-bootstrap (3.1.0)
-django-paypal (0.3.6)
-django-tinymce (2.6.0)
-funcsigs (1.0.2)
-gunicorn==19.4
-idna (2.6)
-mock (2.0.0)
-olefile (0.44)
-pbr (3.1.1)
-Pillow (4.3.0)
-pip (9.0.1)
-python-dateutil (2.6.1)
-pytz (2017.3)
-requests (2.18.4)
-setuptools (36.7.2)
-six (1.11.0)
-sqlparse (0.2.4)
-stripe (1.75.0)
-urllib3 (1.22)
-wheel (0.30.0)
+arrow
+backports.functools-lru-cache
+beautifulsoup4
+certifi
+chardet
+Django
+django-debug-toolbar
+django-disqus
+django-emoticons
+django-forms-bootstrap
+django-paypal
+django-tinymce
+funcsigs
+gunicorn
+idna
+mock
+MySQL-python
+olefile
+pbr
+Pillow
+pip
+python-dateutil
+pytz
+requests
+setuptools
+six
+sqlparse
+stripe
+urllib3
+wheel
