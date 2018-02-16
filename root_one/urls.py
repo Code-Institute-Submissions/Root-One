@@ -7,7 +7,7 @@ from accounts import views as accounts_views
 from paypal_store import views as paypal_views
 from products import views as product_views
 from paypal.standard.ipn import urls as paypal_urls
-from .settings import MEDIA_ROOT
+from settings.base import MEDIA_ROOT
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
