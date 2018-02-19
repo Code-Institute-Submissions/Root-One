@@ -331,8 +331,11 @@ footer {
     }
 }
 
-#siteMap ul li a {
+#siteMap ul li {
+  text-align: center;
+  a {
 	color: white;
+  }
 }
 
 .social {
