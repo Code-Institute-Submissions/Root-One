@@ -27,3 +27,4 @@ sqlparse
 stripe
 urllib3
 wheel
+whitenoise==3.2
