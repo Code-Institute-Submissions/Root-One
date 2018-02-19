@@ -4,7 +4,7 @@
 
 ### What is the app for?
 
-
+This app is an e-commerce web app for Root One foods. Root One Foods is a food production start up currently in
 
 ### What does it do?
 
@@ -37,7 +37,7 @@
 
 ## Tech Used
 
-- [Django] (http://flask.pocoo.org/)
+- [Django] (https://www.djangoproject.com/)
     - We use **Django** as our framework for python.
 - [Bootstrap] (http://getbootstrap.com/)
     - We use **Bootstrap** to give our webapp a responsive layout.
