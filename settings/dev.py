@@ -18,3 +18,6 @@ DATABASES = {
 SITE_URL = 'http://127.0.0.1:8000'
 PAYPAL_NOTIFY_URL = 'http://127.0.0.1:8000/a-specific-url-for-payments'
 PAYPAL_RECEIVER_EMAIL = 'hcuk106_buyer@outlook.com'
+
+# Disqus settings
+

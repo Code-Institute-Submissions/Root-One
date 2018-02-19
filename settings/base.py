@@ -126,3 +126,7 @@ STATICFILES_DIRS = (
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
+
+#Disqus settings
+
+DISQUS_WEBSITE_SHORTNAME = 'RecipeBlog'
