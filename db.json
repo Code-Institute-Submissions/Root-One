@@ -314,24 +314,6 @@
 },
 {
     "model": "admin.logentry",
-    "pk": 5,
-    "fields": {
-        "action_time": "2017-11-29T15:14:41.685Z",
-        "user": [
-            "hcuk106@gmail.com"
-        ],
-        "content_type": [
-            "threads",
-            "subject"
-        ],
-        "object_id": "1",
-        "object_repr": "Fun stuff",
-        "action_flag": 1,
-        "change_message": "[{\"added\": {}}]"
-    }
-},
-{
-    "model": "admin.logentry",
     "pk": 6,
     "fields": {
         "action_time": "2017-11-29T15:15:09.752Z",
