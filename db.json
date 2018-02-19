@@ -1,0 +1,791 @@
+[
+{
+    "model": "sessions.session",
+    "pk": "bbhs0nxnqvvxs3151mvhb3lg0xlqt1od",
+    "fields": {
+        "session_data": "ZmQzNzkzOTdlNGZiMWVjMDU2N2RjMTI2OGM0NThhZTllNjdiOTJmZjp7Il9hdXRoX3VzZXJfaGFzaCI6IjAwODgwNmRmNmM2MTM2ZTY5YWYwOWRjMTQyZDYyNDVkODE0ZjA3MmQiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOiIzIn0=",
+        "expire_date": "2017-12-11T14:02:32.472Z"
+    }
+},
+{
+    "model": "sites.site",
+    "pk": 2,
+    "fields": {
+        "domain": "example.com",
+        "name": "example.com"
+    }
+},
+{
+    "model": "sites.site",
+    "pk": 3,
+    "fields": {
+        "domain": "localhost",
+        "name": "localhost"
+    }
+},
+{
+    "model": "flatpages.flatpage",
+    "pk": 2,
+    "fields": {
+        "url": "/",
+        "title": "Updates",
+        "content": "UPDATE: New range added to the collection. Delicious tagliatelle! Order this week for a discounted price!",
+        "enable_comments": false,
+        "template_name": "",
+        "registration_required": false,
+        "sites": [
+            [
+                "localhost"
+            ]
+        ]
+    }
+},
+{
+    "model": "products.product",
+    "pk": 1,
+    "fields": {
+        "name": "Penne 4 Pack",
+        "price": "10.99",
+        "weight": "500.00",
+        "weight_cat": "g",
+        "description": "Our Penne looks, cooks and tastes like pasta but with 2 x the Protein, over 2 x the Fibre and 40% less net Carbohydrates than traditional pasta it's working harder to keep you healthy! Did we mention it's also Gluten Free and Vegan?",
+        "ingredients": "Chickpea Flour, \r\n\r\nYellow Lentil Flour, \r\n\r\nFava Bean Protein",
+        "further_info": "Nutrition-Per 100g,   \r\nEnergy: 1482 kj, 351 kcal   \r\nFat:\t4.4g   \r\nof which saturates: 0.7g   \r\nCarbohydrates: 51g   \r\nof which sugars: 2.6g   \r\nFibre: 8g  \r\nProtein: 23g   \r\nSalt: 0.01g",
+        "primary_image": "images/penne-4-pack.jpg",
+        "stock": 100,
+        "available": true
+    }
+},
+{
+    "model": "products.product",
+    "pk": 2,
+    "fields": {
+        "name": "Fusilli 4 Pack",
+        "price": "10.99",
+        "weight": "500.00",
+        "weight_cat": "g",
+        "description": "Our Fusilli looks, cooks and tastes like pasta but with 2 x the Protein, over 2 x the Fibre and 40% less net Carbohydrates than traditional pasta it's working harder to keep you healthy! Did we mention it's also Gluten Free and Vegan?",
+        "ingredients": "Chickpea Flour, \r\n\r\nYellow Lentil Flour, \r\n\r\nFava Bean Protein",
+        "further_info": "Nutrition-Per 100g,   \r\nEnergy: 1482 kj, 351 kcal   \r\nFat:\t4.4g   \r\nof which saturates: 0.7g   \r\nCarbohydrates: 51g   \r\nof which sugars: 2.6g   \r\nFibre: 8g  \r\nProtein: 23g   \r\nSalt: 0.01g",
+        "primary_image": "images/fusilli-4-pack.jpg",
+        "stock": 100,
+        "available": true
+    }
+},
+{
+    "model": "products.product",
+    "pk": 3,
+    "fields": {
+        "name": "Mixed 8 Pack",
+        "price": "14.99",
+        "weight": "1.00",
+        "weight_cat": "kg",
+        "description": "Our Penne and Fusilli looks, cooks and tastes like pasta but with 2 x the Protein, over 2 x the Fibre and 40% less net Carbohydrates than traditional pasta it's working harder to keep you healthy! Did we mention it's also Gluten Free and Vegan?",
+        "ingredients": "Chickpea Flour, \r\n\r\nYellow Lentil Flour, \r\n\r\nFava Bean Protein",
+        "further_info": "Nutrition-Per 100g,   \r\nEnergy: 1482 kj, 351 kcal   \r\nFat:\t4.4g   \r\nof which saturates: 0.7g   \r\nCarbohydrates: 51g   \r\nof which sugars: 2.6g   \r\nFibre: 8g  \r\nProtein: 23g   \r\nSalt: 0.01g",
+        "primary_image": "images/mixed-4-pack.jpg",
+        "stock": 100,
+        "available": false
+    }
+},
+{
+    "model": "accounts.user",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$36000$jSDYA46YOdnl$BfrNi1AEy1YchaDK1F+zQqpPp2nkymGSA8T2F+lH8lA=",
+        "last_login": "2017-11-27T13:27:31.988Z",
+        "is_superuser": false,
+        "username": "hello@hello.com",
+        "first_name": "",
+        "last_name": "",
+        "email": "hello@hello.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2017-11-27T12:15:51.048Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.user",
+    "pk": 2,
+    "fields": {
+        "password": "pbkdf2_sha256$36000$4yF2TrLuagJz$i5MmWpeMX9G7/EQXDVwhBdNZgeEcJtTIPfQnCrP4FOc=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "barry@barry.com",
+        "first_name": "",
+        "last_name": "",
+        "email": "barry@barry.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2017-11-27T13:10:03.245Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.user",
+    "pk": 3,
+    "fields": {
+        "password": "pbkdf2_sha256$36000$zEXCc9xLDHrH$z6JxRti9po4chxIsy3Wofc+Ge4xCbyJZ7Jzr0/0YKmU=",
+        "last_login": "2018-02-16T17:02:04.496Z",
+        "is_superuser": true,
+        "username": "hcuk106@gmail.com",
+        "first_name": "",
+        "last_name": "",
+        "email": "hcuk106@gmail.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2017-11-27T13:58:15.728Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.user",
+    "pk": 4,
+    "fields": {
+        "password": "pbkdf2_sha256$36000$SqhZXvmBuz48$jJA/Cza1k1YZUfpInyaGw+W2TB11QsCKssQXf4yAfvY=",
+        "last_login": "2017-12-15T17:26:30.850Z",
+        "is_superuser": false,
+        "username": "example@example.com",
+        "first_name": "",
+        "last_name": "",
+        "email": "example@example.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2017-12-15T17:26:14.766Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "recipes_blog.post",
+    "pk": 1,
+    "fields": {
+        "author": [
+            "hcuk106@gmail.com"
+        ],
+        "title": "Cauliflower and Hazelnut Carbonara",
+        "subtitle": "Test of a recipe",
+        "serves": 2,
+        "cooking_time": "00:30:00",
+        "difficulty": "Not too hard",
+        "diet_info": "Gluten Free & Vegie",
+        "ingredients": "125g Root One Penne\r\n1 Medium White Cauliflower \r\n40g Hazelnuts, Crushed \r\n100ml Single Cream \r\n60g Hard Italian Cheese, Grated. \r\n1 Medium Egg \r\nSalt & Black Pepper \r\nOlive Oil",
+        "method": "Preheat a baking tray with the oven set to 210C (190C fan). Remove the stalk and leaves from the cauliflower then break the head into small florets (I cut up the larger ones). Then add to the backing tray with a glug of oil, salt and a good sprinkling of black pepper. Roast for 15 minutes or until starting to brown, then add the hazelnuts, give a good mix and put back in the oven for another 5-10 minutes. \r\nWhilst the cauliflower is roasting, bring a pot of at least 1.5 litres of water to boil. Once it's boiling rapidly add the Root One Penne and turn down the heat to a simmer, cook for 6 minutes, then strain and give a quick rinse (You want the pasta to stay hot though!)\r\nCrack the egg into a mug and whisk with a fork. \r\nTip the pasta back into the pot you cooked it in, add the cheese and whisked egg. Give it a good mix - the idea here is the heat of the pasta cooks the egg. It should start to form a sticky sauce, then add the cream to loosen and continue to stir. You may need to put the pot back over the heat once you add the cream because it will cool the sauce down. \r\nOnce you're happy with your creamy, cheesy carbonara sauce add the cauliflower and hazelnuts, salt & black pepper (I like a lot of black pepper with mine!) mix thoroughly so everything is coated in sauce and serve.",
+        "created_date": "2017-11-28T17:29:03.966Z",
+        "published_date": "2017-11-28T17:28:43Z",
+        "views": 5017,
+        "tag": "Gluten Free",
+        "image": "images/cauli_hazel_carb.jpg"
+    }
+},
+{
+    "model": "recipes_blog.post",
+    "pk": 2,
+    "fields": {
+        "author": [
+            "hcuk106@gmail.com"
+        ],
+        "title": "Spinach and Mushroom Bake",
+        "subtitle": "Spinach and Mushroom Bake\r\nComfort food of the highest order with high protein, high fibre, Root One Fusilli in this Cheesy Spinach and Mushroom bake. Perfect dish at the end of a long day and with 40% less net carbs than normal pasta!",
+        "serves": 3,
+        "cooking_time": "00:40:00",
+        "difficulty": "Not too hard",
+        "diet_info": "Vegie",
+        "ingredients": "100g Root One Fusilli\r\n125g Shiitake Mushrooms \r\n100g Chanterelle Mushrooms \r\n1 Medium Red Onion \r\n150g Baby Spinach\r\n2 Garlic Cloves \r\n100g Mature Cheddar \r\nGood quality Olive Oil \r\n1 Tin Chopped Tomatoes \r\nTeaspoon of Dry Thyme \r\nSalt and Black Pepper",
+        "method": "Preheat an ovenproof baking dish your at 210C (190C fan). \r\nTrim the stems and halve the larger chanterelles and quarter the larger shiitakes but keep the smaller ones whole. Halve the onion, then cut each half into thirds and peel the layers into slices. \r\nPut the mushrooms, garlic and onion into the dish. Add the thyme and a good glug of oil, mix well and season with salt and pepper. \r\nRoast for about 25 minutes or until the mushrooms have shrunk and the onion and garlic have taken on a good colour. \r\nWhen the veg looks done, remove from the oven and take out the garlic. Then cover with the tin of tomatoes and about half a tin of water. Give a good mix and put back in the oven for 5 -10 minutes whilst you cook the pasta. \r\nBring a pot of at least 1.5ltrs of water to the boil before reducing to a simmer and adding the Root One Fusilli. Cook for 5 minutes before straining and rinsing. \r\nBlanch the spinach under boiling water ( you can mix it directly into the bake rather than blanching first but it can be a bit tricky!) \r\nRemove the bake from the oven, mix in the the spinach and pasta and top with the cheese. I also like to chop the roasted garlic and use that to top the bake! \r\nStick back in the oven until the cheese has melted down and the bake is bubbling nicely. If you're short on time then place under a high grill for 3-5 minutes (but be sure to keep an eye on it to make sure nothing starts to burn!). Then serve and enjoy!",
+        "created_date": "2017-12-01T20:34:28.782Z",
+        "published_date": "2017-12-01T20:33:17Z",
+        "views": 6,
+        "tag": "Mushroom Bake",
+        "image": "images/spin_shroom_bake.jpg"
+    }
+},
+{
+    "model": "recipes_blog.post",
+    "pk": 3,
+    "fields": {
+        "author": [
+            "hcuk106@gmail.com"
+        ],
+        "title": "Tenderstem Broccoli, Black Kale & Shiitake Mushrooms",
+        "subtitle": "Enjoy this wonderfully nutritious dish with high protein, gluten free Root One Penne matched with meaty shiitake mushrooms, tenderstem broccoli and black kale. Ready in under 20 minutes, it's packed with taste and goodness!",
+        "serves": 2,
+        "cooking_time": "00:15:00",
+        "difficulty": "Simple",
+        "diet_info": "Gluten Free & Vegan",
+        "ingredients": "100g Root One Penne\r\n120g Tenderstem Broccoli, ends trimmed \r\n75g Black Kale, roughly chopped \r\n125g Shiitake Mushrooms, quartered \r\n8-10 Cherry Tomatoes, quartered \r\n1 Garlic Clove, diced.\r\nSalt & Black Pepper \r\nGood Quality Olive Oil",
+        "method": "Heat the oil in a pan over a medium heat before adding the broccoli and frying for a couple of minutes. Then add the mushrooms and continue to fry for another 5 minutes or so, until the mushrooms are nicely brown and the broccoli has started to colour. \r\nAdd the garlic and tomatoes and fry for a further 2 minutes before adding the black kale. Season well with the salt and pepper, give it a good mix and continue to fry for 3 minutes or until the kale has begun to wilt. Then take the pan off the heat and set to one side. \r\nBring a pan of at least 1.5 ltrs of water to boil, then reduce to a simmer and add the Root One Penne. Cook for 6-7 minutes before straining, rinsing and adding to the pan with the vegetables. \r\nMix well, the juice from the tomatoes should lightly coat the pasta, then serve!",
+        "created_date": "2017-12-01T20:37:58.306Z",
+        "published_date": "2017-12-01T20:37:35Z",
+        "views": 8,
+        "tag": "Broccoli Kale",
+        "image": "images/brocc_kale.jpg"
+    }
+},
+{
+    "model": "recipes_blog.post",
+    "pk": 4,
+    "fields": {
+        "author": [
+            "hcuk106@gmail.com"
+        ],
+        "title": "Sun-Dried Tomato Pesto, Cavolo Nero and Cherry Tomatoes",
+        "subtitle": "Rich sun-dried tomato pesto works so well with the super healthy cavolo nero in this brilliant dish with high protein, high fibre Root One Penne!",
+        "serves": 4,
+        "cooking_time": "00:20:00",
+        "difficulty": "Simple",
+        "diet_info": "Gluten Free & Vegie",
+        "ingredients": "For the Pesto: \r\n\r\n75g Toasted Pine Nuts\r\n200g Sun-Dried Tomatoes in Oil \r\nJuice of 1/2 a Lemon\r\n15g Fresh Basil\r\n75-100ml Good Quality Olive Oil \r\n20g Vegetarian Hard Italian Cheese \r\n1 Garlic Clove (peeled)\r\nSalt & Pepper \r\nThe Rest:\r\n\r\n200g Root One Penne\r\n30g Fresh Basil\r\n150g Cavolo Nero \r\nOne Pack of Cherry Tomatoes (250-300g)",
+        "method": "Put all of the ingredients for the Pesto in a blender and whizz together till reasonably smooth ( you still want it to retain a bit of texture ). Add more oil if if the pesto looks a bit solid. Taste and set to one side. \r\nBring a pot of at least 2ltrs of salted water to a boil, then add the pasta and reduce to a simmer. Cook for 6-7 minutes and the strain (make sure you reserve about 1/2 cup of the pasta water) and rinse. \r\nWhilst the pasta is cooking, finely dice the cavolo nero and halve the tomatoes before adding to the pan with oil and frying over a medium heat for 4-5 minutes. Once the cavolo nero has wilted down a bit, tear the basil leaves and add to the pan and give a good stir. \r\nAdd the pesto and a splash of pasta water to the pan, mix well and then add the pasta. \r\nStir well until all the pasta is coated with the pesto (the cavolo nero may clump together a bit so make sure you've separated it) Add more pasta water if needed to loosen up the pesto. Taste, season and serve!",
+        "created_date": "2017-12-01T20:40:29.506Z",
+        "published_date": "2017-12-01T20:40:27Z",
+        "views": 64,
+        "tag": null,
+        "image": "images/tom_pesto.jpg"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+        "action_time": "2017-11-27T14:52:12.533Z",
+        "user": [
+            "hcuk106@gmail.com"
+        ],
+        "content_type": [
+            "sites",
+            "site"
+        ],
+        "object_id": "3",
+        "object_repr": "localhost",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+        "action_time": "2017-11-27T14:52:57.694Z",
+        "user": [
+            "hcuk106@gmail.com"
+        ],
+        "content_type": [
+            "flatpages",
+            "flatpage"
+        ],
+        "object_id": "1",
+        "object_repr": "/pages/about/ -- About Me",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+        "action_time": "2017-11-28T17:29:03.969Z",
+        "user": [
+            "hcuk106@gmail.com"
+        ],
+        "content_type": [
+            "recipes_blog",
+            "post"
+        ],
+        "object_id": "1",
+        "object_repr": "Test",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+        "action_time": "2017-11-28T17:36:50.678Z",
+        "user": [
+            "hcuk106@gmail.com"
+        ],
+        "content_type": [
+            "recipes_blog",
+            "post"
+        ],
+        "object_id": "1",
+        "object_repr": "Test",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"image\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+        "action_time": "2017-11-29T15:14:41.685Z",
+        "user": [
+            "hcuk106@gmail.com"
+        ],
+        "content_type": [
+            "threads",
+            "subject"
+        ],
+        "object_id": "1",
+        "object_repr": "Fun stuff",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+        "action_time": "2017-11-29T15:15:09.752Z",
+        "user": [
+            "hcuk106@gmail.com"
+        ],
+        "content_type": [
+            "threads",
+            "thread"
+        ],
+        "object_id": "1",
+        "object_repr": "Thread object",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+        "action_time": "2017-11-29T15:15:29.719Z",
+        "user": [
+            "hcuk106@gmail.com"
+        ],
+        "content_type": [
+            "threads",
+            "post"
+        ],
+        "object_id": "1",
+        "object_repr": "Post object",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+        "action_time": "2017-12-01T20:29:46.657Z",
+        "user": [
+            "hcuk106@gmail.com"
+        ],
+        "content_type": [
+            "recipes_blog",
+            "post"
+        ],
+        "object_id": "1",
+        "object_repr": "Cauliflower and Hazelnut Carbonara",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"title\", \"serves\", \"cooking_time\", \"diet_info\", \"ingredients\", \"method\", \"image\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+        "action_time": "2017-12-01T20:34:28.791Z",
+        "user": [
+            "hcuk106@gmail.com"
+        ],
+        "content_type": [
+            "recipes_blog",
+            "post"
+        ],
+        "object_id": "2",
+        "object_repr": "Spinach and Mushroom Bake",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+        "action_time": "2017-12-01T20:37:58.317Z",
+        "user": [
+            "hcuk106@gmail.com"
+        ],
+        "content_type": [
+            "recipes_blog",
+            "post"
+        ],
+        "object_id": "3",
+        "object_repr": "Tenderstem Broccoli, Black Kale & Shiitake Mushrooms",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+        "action_time": "2017-12-01T20:40:29.514Z",
+        "user": [
+            "hcuk106@gmail.com"
+        ],
+        "content_type": [
+            "recipes_blog",
+            "post"
+        ],
+        "object_id": "4",
+        "object_repr": "Sun-Dried Tomato Pesto, Cavolo Nero and Cherry Tomatoes",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+        "action_time": "2017-12-01T20:41:28.894Z",
+        "user": [
+            "hcuk106@gmail.com"
+        ],
+        "content_type": [
+            "recipes_blog",
+            "post"
+        ],
+        "object_id": "4",
+        "object_repr": "Sun-Dried Tomato Pesto, Cavolo Nero and Cherry Tomatoes",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"image\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+        "action_time": "2017-12-01T21:37:48.798Z",
+        "user": [
+            "hcuk106@gmail.com"
+        ],
+        "content_type": [
+            "recipes_blog",
+            "post"
+        ],
+        "object_id": "4",
+        "object_repr": "Sun-Dried Tomato Pesto, Cavolo Nero and Cherry Tomatoes",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"subtitle\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+        "action_time": "2017-12-01T21:38:24.148Z",
+        "user": [
+            "hcuk106@gmail.com"
+        ],
+        "content_type": [
+            "recipes_blog",
+            "post"
+        ],
+        "object_id": "4",
+        "object_repr": "Sun-Dried Tomato Pesto, Cavolo Nero and Cherry Tomatoes",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"subtitle\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+        "action_time": "2017-12-01T22:17:18.724Z",
+        "user": [
+            "hcuk106@gmail.com"
+        ],
+        "content_type": [
+            "flatpages",
+            "flatpage"
+        ],
+        "object_id": "2",
+        "object_repr": "/ -- Updates",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 16,
+    "fields": {
+        "action_time": "2017-12-02T12:21:19.663Z",
+        "user": [
+            "hcuk106@gmail.com"
+        ],
+        "content_type": [
+            "products",
+            "product"
+        ],
+        "object_id": "1",
+        "object_repr": "Penne 4 Pack",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 17,
+    "fields": {
+        "action_time": "2017-12-02T12:21:26.654Z",
+        "user": [
+            "hcuk106@gmail.com"
+        ],
+        "content_type": [
+            "products",
+            "product"
+        ],
+        "object_id": "1",
+        "object_repr": "Penne 4 Pack",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 18,
+    "fields": {
+        "action_time": "2017-12-02T13:38:21.081Z",
+        "user": [
+            "hcuk106@gmail.com"
+        ],
+        "content_type": [
+            "products",
+            "product"
+        ],
+        "object_id": "1",
+        "object_repr": "Penne 4 Pack",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 19,
+    "fields": {
+        "action_time": "2017-12-02T14:48:17.753Z",
+        "user": [
+            "hcuk106@gmail.com"
+        ],
+        "content_type": [
+            "products",
+            "product"
+        ],
+        "object_id": "1",
+        "object_repr": "Penne 4 Pack",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"primary_image\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 20,
+    "fields": {
+        "action_time": "2017-12-14T09:56:09.681Z",
+        "user": [
+            "hcuk106@gmail.com"
+        ],
+        "content_type": [
+            "flatpages",
+            "flatpage"
+        ],
+        "object_id": "1",
+        "object_repr": "/pages/about/ -- About Me",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 21,
+    "fields": {
+        "action_time": "2017-12-14T09:56:25.447Z",
+        "user": [
+            "hcuk106@gmail.com"
+        ],
+        "content_type": [
+            "flatpages",
+            "flatpage"
+        ],
+        "object_id": "2",
+        "object_repr": "/ -- Updates",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 22,
+    "fields": {
+        "action_time": "2017-12-14T10:44:10.882Z",
+        "user": [
+            "hcuk106@gmail.com"
+        ],
+        "content_type": [
+            "flatpages",
+            "flatpage"
+        ],
+        "object_id": "2",
+        "object_repr": "/ -- Updates",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"content\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 23,
+    "fields": {
+        "action_time": "2017-12-14T22:49:44.758Z",
+        "user": [
+            "hcuk106@gmail.com"
+        ],
+        "content_type": [
+            "products",
+            "product"
+        ],
+        "object_id": "2",
+        "object_repr": "Fusilli 4 Pack",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 24,
+    "fields": {
+        "action_time": "2017-12-14T22:51:17.411Z",
+        "user": [
+            "hcuk106@gmail.com"
+        ],
+        "content_type": [
+            "products",
+            "product"
+        ],
+        "object_id": "3",
+        "object_repr": "Mixed 4 Pack",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 25,
+    "fields": {
+        "action_time": "2017-12-15T14:43:08.864Z",
+        "user": [
+            "hcuk106@gmail.com"
+        ],
+        "content_type": [
+            "products",
+            "product"
+        ],
+        "object_id": "3",
+        "object_repr": "Mixed 8 Pack",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"name\", \"further_info\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 26,
+    "fields": {
+        "action_time": "2017-12-15T14:43:15.881Z",
+        "user": [
+            "hcuk106@gmail.com"
+        ],
+        "content_type": [
+            "products",
+            "product"
+        ],
+        "object_id": "2",
+        "object_repr": "Fusilli 4 Pack",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"further_info\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 27,
+    "fields": {
+        "action_time": "2017-12-15T14:43:22.513Z",
+        "user": [
+            "hcuk106@gmail.com"
+        ],
+        "content_type": [
+            "products",
+            "product"
+        ],
+        "object_id": "1",
+        "object_repr": "Penne 4 Pack",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"further_info\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 28,
+    "fields": {
+        "action_time": "2017-12-15T23:05:44.533Z",
+        "user": [
+            "hcuk106@gmail.com"
+        ],
+        "content_type": [
+            "products",
+            "product"
+        ],
+        "object_id": "3",
+        "object_repr": "Mixed 8 Pack",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"available\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 29,
+    "fields": {
+        "action_time": "2017-12-15T23:05:53.003Z",
+        "user": [
+            "hcuk106@gmail.com"
+        ],
+        "content_type": [
+            "products",
+            "product"
+        ],
+        "object_id": "1",
+        "object_repr": "Penne 4 Pack",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 30,
+    "fields": {
+        "action_time": "2017-12-15T23:05:58.877Z",
+        "user": [
+            "hcuk106@gmail.com"
+        ],
+        "content_type": [
+            "products",
+            "product"
+        ],
+        "object_id": "2",
+        "object_repr": "Fusilli 4 Pack",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+}
+]
