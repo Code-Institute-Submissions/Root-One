@@ -314,42 +314,6 @@
 },
 {
     "model": "admin.logentry",
-    "pk": 6,
-    "fields": {
-        "action_time": "2017-11-29T15:15:09.752Z",
-        "user": [
-            "hcuk106@gmail.com"
-        ],
-        "content_type": [
-            "threads",
-            "thread"
-        ],
-        "object_id": "1",
-        "object_repr": "Thread object",
-        "action_flag": 1,
-        "change_message": "[{\"added\": {}}]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 7,
-    "fields": {
-        "action_time": "2017-11-29T15:15:29.719Z",
-        "user": [
-            "hcuk106@gmail.com"
-        ],
-        "content_type": [
-            "threads",
-            "post"
-        ],
-        "object_id": "1",
-        "object_repr": "Post object",
-        "action_flag": 1,
-        "change_message": "[{\"added\": {}}]"
-    }
-},
-{
-    "model": "admin.logentry",
     "pk": 8,
     "fields": {
         "action_time": "2017-12-01T20:29:46.657Z",
