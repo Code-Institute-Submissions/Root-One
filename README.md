@@ -9,6 +9,7 @@ This app is an e-commerce web app for Root One foods. Root One Foods is a food p
 ### What does it do?
 
 The app will serve as a place for users to:
+
 	- Learn about Root One, who they are, and what they do. 
 	- Check updates on the companies products
 	- View Root One's social media platforms
