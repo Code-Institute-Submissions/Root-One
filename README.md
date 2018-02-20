@@ -4,36 +4,46 @@
 
 ### What is the app for?
 
-This app is an e-commerce web app for Root One foods. Root One Foods is a food production start up currently in
+This app is an e-commerce web app for Root One foods. Root One Foods is a food production start up currently specialising in chickpea based pasta. 
 
 ### What does it do?
 
-
+The app will serve as a place for users to:
+	- Learn about Root One, who they are, and what they do. 
+	- Check updates on the companies products
+	- View Root One's social media platforms
+	- Take a look at Root One's products and choose to buy them using PayPal
+	- View Recipes posted by Root One as well as being able to comment on certain recipes. 
+	- Register and log in to the site in order to make payments to purchase products.
 
 ### How does it work?
 
-
+This is an App using the Django frame work to host a dynamic, multi functional web app made up of multiple python packages.
+Python packages used are: 
+	- Accounts - For managing user accounts as well as super users.
+	- Paypal store - For managing paypal payments from users. 
+	- Products - For managing product libraries
+	- Recipes Blog - A blog to post recipes for users to view and comment on. 
+	
+Packages are rendered into views and displayed in the frontend using templates written in HTML, CSS and Javascript.
 
 ## Features
 
 ### Existing features
 
 - User based
-    - Interactive Graphs
+    - Register to become member of the site
+    - Log in and Log out of account
+    - Purchase Products using Pay Pal
+    - Comment on Recipes
 
 - Display features
     - Home page
-    - Dashboard page containting interactive graphs
-    - Analysis of Graphs and plans
+    - Home Page Updates Using Flat Pages
+    - About Us page
+	- View of Recipes posted on the Recipes Blog
+	- View of current product range
     - Contact page
-    - Interactive graphs:
-    	- Selectors for Donation County and Donation District
-    	- Number displays to show total number of donations and amount in donations in USD
-        - Number of donations over 5 years in USD (Line Graph)
-        - Resource allocation by metro type (Row Graph)
-        - Resource allocation by Primary Subject (Row Graph)
-        - Allocation by Poverty (Pie)
-        - Year Selector (Pie)
 
 ## Tech Used
 
@@ -46,7 +56,14 @@ This app is an e-commerce web app for Root One foods. Root One Foods is a food p
 - [MongoDB] (https://www.mongodb.com/)
     - We use **MongoDB** for our NoSQL database. and local server testing. 
 
-## Testing
+## Testing Done
+
+- Unit Testing
+- Functional Testing 
+- System Testing
+- Performance Testing
+- Usability Testing
+- Regression Testing 
 
 ## Contributing
 
@@ -62,3 +79,13 @@ This app is an e-commerce web app for Root One foods. Root One Foods is a food p
 3. Once **requirements.txt** is installed run **heroku local -f Procfile.local** from your virtual environment.
 4. The project will now run on [localhost](http://127.0.0.1:5000)
 5. Make changes to the code and if you think it belongs in here then just submit a pull request
+
+## Credits
+
+Thanks given to the Code Institute for guidance and teaching to assist in making this app. 
+Thanks also given to Root One for providing of content and testing of App usability. 
+Other organisation's content that assisted in the creation of this web app: 
+	- W3schools
+	- DJango official documentation
+	- Assistance for troubleshooting with Stack Overflow
+	
