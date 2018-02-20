@@ -10,21 +10,21 @@ This app is an e-commerce web app for Root One foods. Root One Foods is a food p
 
 The app will serve as a place for users to:
 
-	- Learn about Root One, who they are, and what they do. 
-	- Check updates on the companies products
-	- View Root One's social media platforms
-	- Take a look at Root One's products and choose to buy them using PayPal
-	- View Recipes posted by Root One as well as being able to comment on certain recipes. 
-	- Register and log in to the site in order to make payments to purchase products.
+- Learn about Root One, who they are, and what they do. 
+- Check updates on the companies products
+- View Root One's social media platforms
+- Take a look at Root One's products and choose to buy them using PayPal
+- View Recipes posted by Root One as well as being able to comment on certain recipes. 
+- Register and log in to the site in order to make payments to purchase products.
 
 ### How does it work?
 
 This is an App using the Django frame work to host a dynamic, multi functional web app made up of multiple python packages.
 Python packages used are: 
-	- Accounts - For managing user accounts as well as super users.
-	- Paypal store - For managing paypal payments from users. 
-	- Products - For managing product libraries
-	- Recipes Blog - A blog to post recipes for users to view and comment on. 
+- Accounts - For managing user accounts as well as super users.
+- Paypal store - For managing paypal payments from users. 
+- Products - For managing product libraries
+- Recipes Blog - A blog to post recipes for users to view and comment on. 
 	
 Packages are rendered into views and displayed in the frontend using templates written in HTML, CSS and Javascript.
 
@@ -56,6 +56,10 @@ Packages are rendered into views and displayed in the frontend using templates w
     - We use **JQuery** to produce a more interactive webapp. 
 - [MongoDB] (https://www.mongodb.com/)
     - We use **MongoDB** for our NoSQL database. and local server testing. 
+- [Disqus] (https://disqus.com/api/docs/)
+    - We use **Disqus** to allow for users to comment on recipes in the Recipes Blog.
+- [Django Paypal] (https://django-paypal.readthedocs.io/en/stable/)
+    -We use **Django Paypal** to allow for users to make purchases of products in the product range.
 
 ## Testing Done
 
@@ -86,7 +90,7 @@ Packages are rendered into views and displayed in the frontend using templates w
 Thanks given to the Code Institute for guidance and teaching to assist in making this app. 
 Thanks also given to Root One for providing of content and testing of App usability. 
 Other organisation's content that assisted in the creation of this web app: 
-	- W3schools
-	- DJango official documentation
-	- Assistance for troubleshooting with Stack Overflow
+- W3schools
+- DJango official documentation
+- Assistance for troubleshooting with Stack Overflow
 	
