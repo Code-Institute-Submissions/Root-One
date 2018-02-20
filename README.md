@@ -59,7 +59,7 @@ Packages are rendered into views and displayed in the frontend using templates w
 - [Disqus] (https://disqus.com/api/docs/)
     - We use **Disqus** to allow for users to comment on recipes in the Recipes Blog.
 - [Django Paypal] (https://django-paypal.readthedocs.io/en/stable/)
-    -We use **Django Paypal** to allow for users to make purchases of products in the product range.
+    - We use **Django Paypal** to allow for users to make purchases of products in the product range.
 
 ## Testing Done
 
