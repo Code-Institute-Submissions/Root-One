@@ -293,6 +293,17 @@ body {
     color: $theme-color;
     font-size: 15px;
   }
+  #contact-Form {
+    margin-top: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  label {
+    font-family: $font-stack;
+    color: $theme-color;
+    font-size: 20px;
+    font-style: oblique;
+  }
 }
 
 /* Styling for Footer */
