@@ -13,6 +13,12 @@
           integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed|Nunito" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'css/rootone.css' %}">
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+       (function(){
+          emailjs.init("user_9HNBOlAd7KO3VpmklserK");
+       })();
+    </script>
     {% block head_js %}{% endblock %}
 </head>
 <body>
@@ -114,4 +120,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js">
 </script>
+<script src="{% static 'js/templates.js' %}"></script>
+<script src="{% static 'js/email.js' %}"></script>
 </html>
