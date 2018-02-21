@@ -8,6 +8,7 @@ from paypal_store import views as paypal_views
 from products import views as product_views
 from paypal.standard.ipn import urls as paypal_urls
 from settings.base import MEDIA_ROOT
+from django.views.decorators.csrf import csrf_exempt
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
@@ -27,7 +28,7 @@ urlpatterns = [
 
     # URLs for accounts
     url(r'^register/$', accounts_views.register, name='register'),
-    url(r'^profile/$', accounts_views.profile, name='profile'),
+    url(r'^profile/$', csrf_exempt(accounts_views.profile), name='profile'),
     url(r'^login/', accounts_views.login, name='login'),
     url(r'^logout/$', accounts_views.logout, name='logout'),
 

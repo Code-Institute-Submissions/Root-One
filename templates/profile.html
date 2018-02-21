@@ -13,15 +13,9 @@
                 <p>If you have feedback about any of your orders, please fill in the form below!<br>Let us know your
                     feedback and please quote your order number if you have a specific issue.</p>
         </div>
-        <form id="contact-Form" name="contactForm" onsubmit="return sendMail(this)" method="POST">
+        <form id="contactForm" name="contactForm" onsubmit="return sendMail(this)" method="POST">
                 <div class="form-group">
-                    <label for="fname">Full Name</label>
-                    <input type="text" name="name" class="form-control" id="usr" placeholder="Name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" name="email" class="form-control" id="email"
-                    placeholder="Email" required>
+                    <input type="hidden" name="email" class="form-control" value="{{ user.email }}">
                 </div>
                 <div class="form-group">
                     <label>Your Message</label>
