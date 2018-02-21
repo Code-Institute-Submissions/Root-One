@@ -8,6 +8,7 @@ function sendMail(contactForm) {
                 window.message("Success", response);
             },
             function (error) {
-                window.message("error", error);
+                window.message("Email functionality is currently disabled, please send your query to test@example.com",
+                    error);
             });
 }
