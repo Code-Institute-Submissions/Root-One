@@ -7,7 +7,7 @@
 {% endblock %}
 
 {% block content %}
-    <form role="form" method="post" action="{% url 'register' %}">
+    <form role="form" method="post" action="{% url 'register' %}" onsubmit="return registerVer()" id="registerForm">
         <legend>Create a new account</legend>
         {% csrf_token %}
         {{ form | as_bootstrap }}

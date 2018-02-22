@@ -8,22 +8,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Website for Root One Foods">
     <meta name="author" content="Henry Curtis">
+    <!-- Bootstrap and fonts-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.6/cerulean/bootstrap.min.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
           integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed|Nunito" rel="stylesheet">
+    <!-- Twenty Twenty CSS -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/twentytwenty.css' %}">
+    <!-- Styling CSS-->
     <link rel="stylesheet" href="{% static 'css/rootone.css' %}">
+    <!-- Email JS-->
     <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script type="text/javascript">
        (function(){
           emailjs.init("user_9HNBOlAd7KO3VpmklserK");
        })();
     </script>
-    {% block head_js %}{% endblock %}
 </head>
 <body>
 <div class="container">
-   <nav class="navbar navbar-default">
+   <nav id="nav" class="navbar navbar-default">
         <div class="container-fluid">
             <!-- Navigation header with toggle for collapsing display -->
             <div class="navbar-header">
@@ -46,7 +50,7 @@
                    <li><a href="/blog/">Recipes</a></li>
                    {% if user.is_authenticated %}
                        <li><a href="{% url 'profile' %}">Your Profile</a></li>
-                       <li><a href="{% url 'logout' %}">Log Out</a></li>
+                       <li><a href="{% url 'logout' %}" onclick="return logout()">Log Out</a></li>
                    {% else %}
                        <li><a href="{% url 'register' %}">Register</a></li>
                        <li><a href="{% url 'login' %}">Log In</a></li>
@@ -110,16 +114,22 @@
             </div>
         </div>
         <div class="footer-bottom text-muted">
-            <h4><b>Copyright &copy; RootOne</b></h4>
+            <h4><b>RootOne</b></h4>
         </div>
     </footer>
 </div>
 </body>
-
 <!-- script references -->
+<!-- Bootstrap and JQuery -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js">
 </script>
+<!-- sweetalert plugin -->
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<!-- Twenty Twenty Scripts-->
+<script src="{% static 'js/lib/jquery.event.move.js' %}"></script>
+<script src="{% static 'js/lib/jquery.twentytwenty.js' %}"></script>
+<!-- Template Scripts -->
 <script src="{% static 'js/templates.js' %}"></script>
 <script src="{% static 'js/email.js' %}"></script>
 </html>
