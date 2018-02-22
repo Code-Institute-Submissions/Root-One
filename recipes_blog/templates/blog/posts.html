@@ -1,13 +1,17 @@
 {% extends "base.html" %}
 
 {% block content %}
+    <div id="recipeHead">
+        <h1>Check Out Our Recipes!</h1>
+        <h3>All using Root One Pasta!</h3>
+    </div>
     {% for post in posts %}
         <div class="row recipe-posts" onclick="location.href={{ post.id }}">
             <hr>
             <div class="col-md-4 col-sm-6 text-center">
                 <a class="recipe-thumb" href="{{ post.id}}">
                     <img src="/media/{{ post.image }}" style="height: 200px; background-color: #12ABB2;
-                    color: #ffffff; border-radius: 20px;">
+                    color: #ffffff; border-radius: 20px;" onclick="zoomPic(this)">
                 </a>
             </div>
             <div class="col-md-8 col-sm-6 post-brief">
