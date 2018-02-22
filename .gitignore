@@ -1,1 +1,5 @@
+# Database to be stored on seperate server
 db.sqlite3
+
+# No pyc files
+*.pyc
