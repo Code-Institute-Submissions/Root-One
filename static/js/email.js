@@ -5,10 +5,16 @@ function sendMail(contactForm) {
     })
         .then(
             function (response) {
-                window.message("Success", response);
+                swal({
+                    title: "Your email has been submitted!",
+                    icon: "success"
+                });
             },
             function (error) {
-                window.message("Email functionality is currently disabled, please send your query to test@example.com",
-                    error);
+                swal({
+                    title: "There has been an error!",
+                    text: "Please try again later or email example@example.com",
+                    icon: "error"
+                });
             });
 }
