@@ -263,6 +263,9 @@ body {
   img {
     position: absolute;
     left: 0px;
+    @media (max-width: 768px) {
+        position: relative;
+      }
   }
   .post-brief {
       font-family: $font-stack;
